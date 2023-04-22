@@ -1,0 +1,23 @@
+[2023-04-22T18:51:24.808+0800] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: membership_data_pipeline.output_csv_files manual__2023-04-22T10:51:07.011695+00:00 [queued]>
+[2023-04-22T18:51:24.813+0800] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: membership_data_pipeline.output_csv_files manual__2023-04-22T10:51:07.011695+00:00 [queued]>
+[2023-04-22T18:51:24.813+0800] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-22T18:51:24.813+0800] {taskinstance.py:1289} INFO - Starting attempt 1 of 2
+[2023-04-22T18:51:24.814+0800] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-22T18:51:24.822+0800] {taskinstance.py:1309} INFO - Executing <Task(PythonOperator): output_csv_files> on 2023-04-22 10:51:07.011695+00:00
+[2023-04-22T18:51:24.826+0800] {standard_task_runner.py:55} INFO - Started process 16751 to run task
+[2023-04-22T18:51:24.831+0800] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'membership_data_pipeline', 'output_csv_files', 'manual__2023-04-22T10:51:07.011695+00:00', '--job-id', '77', '--raw', '--subdir', 'DAGS_FOLDER/membership_data_pipeline.py', '--cfg-path', '/var/folders/0l/pz0m87jx42n2smkt11j43gy40000gn/T/tmpjuq3tyrw']
+[2023-04-22T18:51:24.832+0800] {standard_task_runner.py:83} INFO - Job 77: Subtask output_csv_files
+[2023-04-22T18:51:24.873+0800] {task_command.py:389} INFO - Running <TaskInstance: membership_data_pipeline.output_csv_files manual__2023-04-22T10:51:07.011695+00:00 [running]> on host yanqings-macbook-pro.local
+[2023-04-22T18:51:24.954+0800] {taskinstance.py:1516} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=membership_data_pipeline
+AIRFLOW_CTX_TASK_ID=output_csv_files
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-22T10:51:07.011695+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-22T10:51:07.011695+00:00
+[2023-04-22T18:51:24.973+0800] {python.py:177} INFO - Done. Returned value was: None
+[2023-04-22T18:51:24.977+0800] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=membership_data_pipeline, task_id=output_csv_files, execution_date=20230422T105107, start_date=20230422T105124, end_date=20230422T105124
+[2023-04-22T18:51:25.018+0800] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-04-22T18:51:25.028+0800] {taskinstance.py:2596} INFO - 0 downstream tasks scheduled from follow-on schedule check

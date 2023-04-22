@@ -1,0 +1,7 @@
+[2023-04-22T18:50:40.859+0800] {processor.py:153} INFO - Started process (PID=16728) to work on /Users/yanqingfu/airflow/dags/membership_data_pipeline.py
+[2023-04-22T18:50:40.859+0800] {processor.py:743} INFO - Processing file /Users/yanqingfu/airflow/dags/membership_data_pipeline.py for tasks to queue
+[2023-04-22T18:50:40.859+0800] {logging_mixin.py:137} INFO - [2023-04-22T18:50:40.859+0800] {dagbag.py:532} INFO - Filling up the DagBag from /Users/yanqingfu/airflow/dags/membership_data_pipeline.py
+[2023-04-22T18:50:41.094+0800] {processor.py:753} INFO - DAG(s) dict_keys(['membership_data_pipeline']) retrieved from /Users/yanqingfu/airflow/dags/membership_data_pipeline.py
+[2023-04-22T18:50:41.668+0800] {logging_mixin.py:137} INFO - [2023-04-22T18:50:41.668+0800] {dag.py:2705} INFO - Sync 1 DAGs
+[2023-04-22T18:50:41.681+0800] {logging_mixin.py:137} INFO - [2023-04-22T18:50:41.681+0800] {dag.py:3452} INFO - Setting next_dagrun for membership_data_pipeline to 2023-04-22T10:27:35.594262+00:00, run_after=2023-04-22T11:27:35.594262+00:00
+[2023-04-22T18:50:41.693+0800] {processor.py:175} INFO - Processing /Users/yanqingfu/airflow/dags/membership_data_pipeline.py took 0.835 seconds

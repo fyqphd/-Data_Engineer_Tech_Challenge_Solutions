@@ -1,0 +1,36 @@
+[2023-04-22T18:51:15.678+0800] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: membership_data_pipeline.format_data manual__2023-04-22T10:51:07.011695+00:00 [queued]>
+[2023-04-22T18:51:15.686+0800] {taskinstance.py:1090} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: membership_data_pipeline.format_data manual__2023-04-22T10:51:07.011695+00:00 [queued]>
+[2023-04-22T18:51:15.686+0800] {taskinstance.py:1288} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-22T18:51:15.686+0800] {taskinstance.py:1289} INFO - Starting attempt 1 of 2
+[2023-04-22T18:51:15.687+0800] {taskinstance.py:1290} INFO - 
+--------------------------------------------------------------------------------
+[2023-04-22T18:51:15.701+0800] {taskinstance.py:1309} INFO - Executing <Task(PythonOperator): format_data> on 2023-04-22 10:51:07.011695+00:00
+[2023-04-22T18:51:15.705+0800] {standard_task_runner.py:55} INFO - Started process 16744 to run task
+[2023-04-22T18:51:15.712+0800] {standard_task_runner.py:82} INFO - Running: ['airflow', 'tasks', 'run', 'membership_data_pipeline', 'format_data', 'manual__2023-04-22T10:51:07.011695+00:00', '--job-id', '75', '--raw', '--subdir', 'DAGS_FOLDER/membership_data_pipeline.py', '--cfg-path', '/var/folders/0l/pz0m87jx42n2smkt11j43gy40000gn/T/tmpe_cqlw0_']
+[2023-04-22T18:51:15.714+0800] {standard_task_runner.py:83} INFO - Job 75: Subtask format_data
+[2023-04-22T18:51:15.771+0800] {task_command.py:389} INFO - Running <TaskInstance: membership_data_pipeline.format_data manual__2023-04-22T10:51:07.011695+00:00 [running]> on host yanqings-macbook-pro.local
+[2023-04-22T18:51:15.849+0800] {taskinstance.py:1516} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=membership_data_pipeline
+AIRFLOW_CTX_TASK_ID=format_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-04-22T10:51:07.011695+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-04-22T10:51:07.011695+00:00
+[2023-04-22T18:51:17.029+0800] {python.py:177} INFO - Done. Returned value was:                 name                              email  ... last_name above_18
+0      William Dixon  William_Dixon@woodward-fuller.biz  ...     Dixon     True
+1       Kristen Horn               Kristen_Horn@lin.com  ...      Horn     True
+2     Kimberly Chang   Kimberly_Chang@johnson-lopez.biz  ...     Chang     True
+3          Mary Ball              Mary_Ball@stevens.biz  ...      Ball     True
+4     Benjamin Craig           Benjamin_Craig@berry.net  ...     Craig     True
+...              ...                                ...  ...       ...      ...
+4994  Shirley Nguyen           Shirley_Nguyen@meyer.com  ...    Nguyen     True
+4995     Jesse Brown              Jesse_Brown@davis.com  ...     Brown     True
+4996   Valerie Owens            Valerie_Owens@burns.com  ...     Owens     True
+4997    Alicia Sharp           Alicia_Sharp@bernard.biz  ...     Sharp     True
+4998   Sherry Jensen   Sherry_Jensen@small-espinoza.com  ...    Jensen     True
+
+[4999 rows x 7 columns]
+[2023-04-22T18:51:17.048+0800] {taskinstance.py:1327} INFO - Marking task as SUCCESS. dag_id=membership_data_pipeline, task_id=format_data, execution_date=20230422T105107, start_date=20230422T105115, end_date=20230422T105117
+[2023-04-22T18:51:17.083+0800] {local_task_job.py:212} INFO - Task exited with return code 0
+[2023-04-22T18:51:17.098+0800] {taskinstance.py:2596} INFO - 1 downstream tasks scheduled from follow-on schedule check
