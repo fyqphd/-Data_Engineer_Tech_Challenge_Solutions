@@ -4,8 +4,6 @@ The current idea:
 
 1. use Python to dowload data using the API https://covid19api.com/
 
-''
-
 2. load data into Tableau 2023.1
 
 Other ideas:
