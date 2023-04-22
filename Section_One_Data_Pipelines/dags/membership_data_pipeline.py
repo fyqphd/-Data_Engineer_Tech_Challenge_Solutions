@@ -17,6 +17,10 @@ input_folder = '/Users/yanqingfu/airflow/in'
 successful_folder = '/Users/yanqingfu/airflow/successful'
 unsuccessful_folder = '/Users/yanqingfu/airflow/unsuccessful'
 
+# get today's date at 12:00 AM
+today = datetime.now()
+start_date = today.replace(hour=0, minute=0, second=0, microsecond=0)
+
 # define DAG arguments
 default_args = {
     'owner': 'airflow',
@@ -25,7 +29,7 @@ default_args = {
     'email_on_retry': False,
     'retries': 1,
     'retry_delay': timedelta(minutes=3),
-    'start_date': datetime(2023, 4, 22),
+    'start_date': start_date,
 }
 
 # define DAG
