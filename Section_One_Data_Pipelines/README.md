@@ -8,6 +8,10 @@ The pipeline will ingest, clean, perform validity checks, and create membership 
 - Apache Airflow 2.5.3
 - SQLAlchemy 1.4.41
 
+### Data Assumptions
+- No middle name present in the name column
+- No area code in the mobile_no column
+
 ### Pipeline Components
 
 Assume that the pipeline finishes within 30 minutes when it starts.
@@ -54,3 +58,11 @@ create membership id for successful applications
 
 ![result image](./images/run_result.png)
 
+
+### Suggestions to Upstream
+
+Enforce the following rules, which will make the whole application process more efficient and effective.
+
+* No suffix or prefix allowed, just have first name and last name input boxes
+* Only allow one format for birthdate
+* Check the length of the phone number; otherwise, don't allow submission
