@@ -45,7 +45,8 @@ successful applications critira:
 * mobile_no column has a length of 8
 * age above 18
 * email ends with .com or .net
-create membership id for successful applications
+
+Create membership id for successful applications.
 
 4. Write Results to Folders
 
