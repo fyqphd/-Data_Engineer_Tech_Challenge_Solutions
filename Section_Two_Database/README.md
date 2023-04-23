@@ -16,9 +16,9 @@ The database consists of the following six tables:
 * items
 * order_status
 * item_stock
-* manufactures
+* manufacturers
 
-By designing this table, different teams can perform different functions
+By designing this table, different teams can perform different functions.
 
 logistic team:
 
@@ -30,6 +30,7 @@ logistic team:
 business insight team:
 
 * popular items (index on item_name)
+* popular manufacturers
 * frequent shoppers
 
 warehouse team
@@ -38,9 +39,9 @@ warehouse team
 
 ### Advantage of Indexes
 
-- Improve query performance: indexing can help avoid full table scan and reduce the numbers of records need to be scaned, thus speed up the query process time
+- Improve query performance: indexing can help avoid full table scan and reduce the numbers of records need to be scaned, thus speed up the query process time;
 
-- Improve filtering and sorting performance: when a column use in the WHERE and ORDER BY clauses, index the column can help filter and sort data quickly
+- Improve filtering and sorting performance: when a column use in the WHERE and ORDER BY clauses, index the column can help filter and sort data quickly;
 
 - Improve join performance: when joining large tables, index can help find matching records quickly
 
