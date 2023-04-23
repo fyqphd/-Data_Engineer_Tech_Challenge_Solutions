@@ -3,14 +3,29 @@ This document describes multiclass classification for categorical data by using 
 
 ### Settings
 
-* Data spilt: 80% for training, 10% for validation, and 10% for testing
-* Features: maint, doors, lug_boot, safety, class
-* Metric: log loss
+* Data spilt: 80% for training, 10% for validation, and 10% for testing.
+* Features: maint, doors, lug_boot, safety, class.
+* Metric: log loss.
 
+![result image](./settings.png)
+
+### Model Results
+
+The model shows log loss is 1.24.
+
+![result image](./log_loss.png)
+
+Feature importance: tt seems that class feature plays an important role in the model.
+
+![result image](./feature_importants.png)
 
 ### Results
 
-For the following feature, the buying price is low
+For the following feature, the buying price is low.
+
+![result image](./result.png)
+
+
 
 
 
