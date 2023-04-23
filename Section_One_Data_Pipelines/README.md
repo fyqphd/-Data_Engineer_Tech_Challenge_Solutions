@@ -9,52 +9,52 @@ The pipeline will ingest, clean, perform validity checks, and create membership 
 - SQLAlchemy 1.4.41
 
 ### Data Assumptions
-- No middle name present in the name column
-- No area code in the mobile_no column
+- No middle name present in the name column.
+- No area code in the mobile_no column.
 
 ### Pipeline Components
 
 Assume that the pipeline finishes within 30 minutes when it starts.
 For example, if the pipeline starts at 8:00 am, it should finish at 8:30 am.
 
-The pipeline consist of four components
+The pipeline consists of four components.
 
 1. Data Ingestion
 
-  task id get_new_csv_files
+  **Task id: get_new_csv_files**
   
-  check if any new file in the targeted folder with a buffer time 10 minutes
-if there are new files, combine them into one dataframe
+  Check if any new file in the targeted folder with a buffer time 10 minutes, if there are new files, combine them into one dataframe.
 
 2. Data Cleaning and Transformation
 
-  task id format_data
+  **Task id: format_data**
   
-* remove rows with missing values on name and date_of_birth column
-* remove duplicate rows
-* separate name column into first name and last name using regular expression, which ignores suffix and prefix
-* format date_of_birth column as YYYYMMDD
-* remove spaces in mobile_no column
-* add above_18 column as of 1 Jan 2022
+* Remove rows with missing values on name and date_of_birth column.
+* Remove duplicate rows.
+* Separate name column into first name and last name using regular expression, which ignores suffix and prefix.
+* Format date_of_birth column as YYYYMMDD.
+* Remove spaces in mobile_no column.
+* Add above_18 column as of 1 Jan 2022.
 
 3. Perform Validity Checks
 
-  task id check_validity
+  **Task id: check_validity**
   
-successful applications critira: 
-* mobile_no column has a length of 8
-* age above 18
-* email ends with .com or .net
+Successful applications critira: 
+
+* mobile_no column has a length of 8;
+* age above 18;
+* email ends with .com or .net.
 
 Create membership id for successful applications.
 
 4. Write Results to Folders
 
-  task id output_csv_files
+  **Task id: output_csv_files**
   
-  for sucessful applications, the data is store at the successful folder, otherwise, in unsuccessful_folder
+  For sucessful applications, the data is store at the successful folder, otherwise, in unsuccessful_folder.
   
-  file name also has a datetime tag YYYYYMMDDHH for easy tracking
+  File name also has a datetime tag YYYYYMMDDHH for easy tracking.
 
 
 ### Pipeline Test Run Results
@@ -66,6 +66,6 @@ Create membership id for successful applications.
 
 Enforce the following rules, which will make the whole application process more efficient and effective.
 
-* No suffix or prefix allowed, just have first name and last name input boxes
-* Only allow one format for birthdate
-* Check the length of the phone number; otherwise, don't allow submission
+* No suffix or prefix allowed, just have first name and last name input boxes;
+* Only allow one format for birthdate;
+* Check the length of the phone number; otherwise, don't allow submission.
