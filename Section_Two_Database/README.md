@@ -30,7 +30,7 @@ logistic team:
 business insight team:
 
 * popular items (index on item_name)
-* popular manufacturers
+* popular manufacturers (index on manufacture_name)
 * frequent shoppers
 
 warehouse team
