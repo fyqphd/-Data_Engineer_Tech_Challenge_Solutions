@@ -18,7 +18,7 @@ The database consists of the following six tables:
 * item_stock
 * manufactures
 
-by designing this table, different teams can perform different functions
+By designing this table, different teams can perform different functions
 
 logistic team:
 
