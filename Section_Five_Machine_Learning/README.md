@@ -3,7 +3,7 @@ This document describes multiclass classification for categorical data by using 
 
 ### Settings
 
-Download the dataset, add columns, convert it to csv file and upload to Google Cloud Storage.
+Download the dataset, add columns, convert it to csv file and upload the csv file to Google Cloud Storage.
 
 * Data spilt: 80% for training, 10% for validation, and 10% for testing.
 * Features: maint, doors, lug_boot, safety, class.
