@@ -53,6 +53,8 @@ Create membership id for successful applications.
   task id output_csv_files
   
   for sucessful applications, the data is store at the successful folder, otherwise, in unsuccessful_folder
+  
+  file name also has a datetime tag YYYYYMMDDHH for easy tracking
 
 
 ### Pipeline Test Run Results
