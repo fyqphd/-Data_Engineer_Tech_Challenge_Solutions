@@ -40,7 +40,7 @@ warehouse team
 
 - Improve query performance: indexing can help avoid full table scan and reduce the numbers of records need to be scaned, thus speed up the query process time
 
-- Improve filtering and sorting performance: when a column use in the WHERE and ORDER BY clauses, index filter and sort data quickly
+- Improve filtering and sorting performance: when a column use in the WHERE and ORDER BY clauses, index the column can help filter and sort data quickly
 
 - Improve join performance: when joining large tables, index can help find matching records quickly
 
