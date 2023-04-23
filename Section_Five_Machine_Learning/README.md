@@ -21,7 +21,7 @@ Feature importance: it seems that class feature plays an important role in the m
 
 ### Results
 
-For the following feature, the buying price has high probability to be low as the highest probability is the predicted result for the given data point.
+For the following feature, the buying price has high probability to be **LOW** as the highest probability is the predicted result for the given data point.
 
 ![result image](./result.png)
 
