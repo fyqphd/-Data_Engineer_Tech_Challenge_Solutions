@@ -5,7 +5,7 @@ This document describes multiclass classification for categorical data by using 
 
 * Data spilt: 80% for training, 10% for validation, and 10% for testing.
 * Features: maint, doors, lug_boot, safety, class.
-* Metric: log loss.
+* Metric: log loss, which measrues how close the prediction probability is to the corresponding actual value.
 
 ![result image](./settings.png)
 
@@ -21,7 +21,7 @@ Feature importance: it seems that class feature plays an important role in the m
 
 ### Results
 
-For the following feature, the buying price has high probability to be low.
+For the following feature, the buying price has high probability to be low as the highest probability is the predicted result for the given data point.
 
 ![result image](./result.png)
 
