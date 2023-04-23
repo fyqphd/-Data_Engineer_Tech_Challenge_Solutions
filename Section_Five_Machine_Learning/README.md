@@ -15,7 +15,7 @@ The model shows log loss is 1.24.
 
 ![result image](./log_loss.png)
 
-Feature importance: tt seems that class feature plays an important role in the model.
+Feature importance: it seems that class feature plays an important role in the model.
 
 ![result image](./feature_importants.png)
 
