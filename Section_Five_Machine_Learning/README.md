@@ -21,7 +21,7 @@ Feature importance: it seems that class feature plays an important role in the m
 
 ### Results
 
-For the following feature, the buying price is low.
+For the following feature, the buying price has high probability to be low.
 
 ![result image](./result.png)
 
