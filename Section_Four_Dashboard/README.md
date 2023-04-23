@@ -8,7 +8,7 @@ The current idea:
 
 Other ideas:
 
-Load data into database, use Dash, R Shiny or Tableau connect to the database and build the dashboard
+Load data into database, use Dash, R Shiny or Tableau connect to the database and build the dashboard.
 
 ### Dashboard
 
