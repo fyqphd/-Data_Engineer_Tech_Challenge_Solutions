@@ -18,14 +18,13 @@ The database consists of the following six tables:
 * item_stock
 * manufacturers
 
-By designing this table, different teams can perform different functions.
+By designing those tables, different teams can get different insights from the database.
 
 logistic team:
 
 * total item weight
 * how long is the shipping process
 * update order shipping status
-* optimal shipping routine
 
 business insight team:
 
@@ -41,19 +40,19 @@ warehouse team
 
 - Improve query performance: indexing can help avoid full table scan and reduce the numbers of records need to be scaned, thus speed up the query process time;
 
-- Improve filtering and sorting performance: when a column use in the WHERE and ORDER BY clauses, index the column can help filter and sort data quickly;
+- Improve filtering and sorting performance: when a column is used in the WHERE and ORDER BY clauses, index the column can help filter and sort data quickly;
 
-- Improve join performance: when joining large tables, index can help find matching records quickly
+- Improve join performance: when joining large tables, index can help find matching records quickly.
 
-Entity Relationship Diagram
+### Entity Relationship Diagram
 
 ![result image](./images/erd.png)
 
-Dbeaver database view
+### Dbeaver Database View
 
 ![result image](./images/dbeaver.png)
 
-Docker view
+### Docker View
 
 ![result image](./images/docker.png)
 
