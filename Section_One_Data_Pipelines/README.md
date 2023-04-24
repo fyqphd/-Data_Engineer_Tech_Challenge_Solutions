@@ -8,14 +8,16 @@ The pipeline will ingest, clean, perform validity checks, and create membership 
 - Apache Airflow 2.5.3
 - SQLAlchemy 1.4.41
 
-### Data Assumptions
+### Assumptions
 - No middle name present in the name column.
 - No area code in the mobile_no column.
+- No letter in the data_of_birth column.
+- The pipeline finishes within 30 minutes when it starts.
+For example, if the pipeline starts at 8:00 am, it should finish no later than 8:30 am.
 
 ### Pipeline Components
 
-Assume that the pipeline finishes within 30 minutes when it starts.
-For example, if the pipeline starts at 8:00 am, it should finish at 8:30 am.
+Assume that 
 
 The pipeline consists of four components.
 
@@ -23,7 +25,7 @@ The pipeline consists of four components.
 
   **Task id: get_new_csv_files**
   
-  Check if any new file in the targeted folder with a buffer time 10 minutes, if there are new files, combine them into one dataframe.
+  Check if any new file in the targeted folder with a buffer time of 10 minutes, if there are new files, combine them into one dataframe.
 
 2. Data Cleaning and Transformation
 
@@ -57,14 +59,16 @@ Create membership id for successful applications.
   File name also has a datetime tag YYYYYMMDDHH for easy tracking.
 
 
-### Pipeline Test Run Results
+### Pipeline Test Run Result
+
+No failure.
 
 ![result image](./images/run_result.png)
 
 
 ### Suggestions to Upstream
 
-Enforce the following rules, which will make the whole application process more efficient and effective.
+Establish a data poilcy, which will make the whole application process more efficient and effective.
 
 * No suffix or prefix allowed, just have first name and last name input boxes;
 * Only allow one format for birthdate;
