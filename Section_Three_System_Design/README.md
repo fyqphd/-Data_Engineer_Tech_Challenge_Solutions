@@ -17,7 +17,7 @@ The API Gateway acts as the single entry point for all client requests, thus don
 
 **Google Cloud Storage (GCS)**
 
-GCS is used to store the uploaded images and processed images in different buckets. A lifecycle policy is set up on the two buckets to automatically delete objects older than 7 days, addressing the compliance and privacy requirements. 
+GCS standard class is used to store the uploaded images and processed images in different buckets. A lifecycle policy is set up on the two buckets to automatically delete objects older than 7 days, addressing the compliance and privacy requirements. 
 
 **Pub/Sub**
 
