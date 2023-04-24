@@ -3,7 +3,7 @@ This document describes multiclass classification for categorical data by using 
 
 ### Settings
 
-Download the dataset, add columns, convert it to csv file and upload the csv file to Google Cloud Storage.
+Download the dataset, add column names, convert it to csv file and upload the csv file to Google Cloud Storage.
 
 * Data spilt: 80% for training, 10% for validation, and 10% for testing.
 * Features: maint, doors, lug_boot, safety, class.
@@ -11,26 +11,18 @@ Download the dataset, add columns, convert it to csv file and upload the csv fil
 
 ![result image](./settings.png)
 
-### Model Results
+### Model Result
 
 The model shows log loss is 1.24.
 
 ![result image](./log_loss.png)
 
-Feature importance: it seems that class feature plays an important role in the model.
+Feature importance: it seems that the class feature plays an important role in the model.
 
 ![result image](./feature_importants.png)
 
-### Results
+### Result
 
 For the following feature, the buying price has high probability to be **LOW** as the highest probability is the predicted result for the given data point.
 
 ![result image](./result.png)
-
-
-
-
-
-
-
-
