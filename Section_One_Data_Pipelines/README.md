@@ -17,8 +17,6 @@ For example, if the pipeline starts at 8:00 am, it should finish no later than 8
 
 ### Pipeline Components
 
-Assume that 
-
 The pipeline consists of four components.
 
 1. Data Ingestion
